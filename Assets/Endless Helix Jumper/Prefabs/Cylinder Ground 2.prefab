@@ -94,6 +94,8 @@ GameObject:
   - component: {fileID: 4368556925629560}
   - component: {fileID: 5271199402433290066}
   - component: {fileID: 8874332520489153382}
+  - component: {fileID: 1418537212049214095}
+  - component: {fileID: 1910842354330708092}
   m_Layer: 0
   m_Name: Cylinder Ground 2
   m_TagString: Untagged
@@ -144,6 +146,34 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!114 &1418537212049214095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1360092271186964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 798d9b67dfe29bd41995635e26913587, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &1910842354330708092
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1360092271186964}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1619955907425438
 GameObject:
   m_ObjectHideFlags: 0
