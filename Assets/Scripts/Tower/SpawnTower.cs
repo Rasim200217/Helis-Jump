@@ -6,6 +6,7 @@ using Random = System.Random;
 
 public class SpawnTower : MonoBehaviour
 {
+    [SerializeField] private int _distancePlatform;
     [SerializeField] private int _levelCount;
     [SerializeField] private float _additionScale;
     [SerializeField] private GameObject _beam;
@@ -15,7 +16,7 @@ public class SpawnTower : MonoBehaviour
 
     private float _startAndFinishAdditionScale = 0.5f;
 
-    public float beamScaleY => _levelCount / 2f + _startAndFinishAdditionScale + _additionScale / 2f;
+    public float beamScaleY => _levelCount / 2 + _startAndFinishAdditionScale + _additionScale / 2f;
 
 
     private void Start()
@@ -45,6 +46,6 @@ public class SpawnTower : MonoBehaviour
     private void SpawnPlatform(Platform platform, ref Vector3 spawnPosition, Transform parent)
     {
         Instantiate(platform, spawnPosition, Quaternion.Euler(0, UnityEngine.Random.Range(0, 360), 0), parent);
-        spawnPosition.y -= 1;
+        spawnPosition.y -= _distancePlatform;
     }
 }

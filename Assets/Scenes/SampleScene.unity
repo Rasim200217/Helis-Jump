@@ -248,7 +248,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0bb6324c8193f44cab9dc39c961eace, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _levelCount: 5
+  _distancePlatform: 3
+  _levelCount: 8
   _additionScale: 3
   _beam: {fileID: 278967993290772610, guid: a70d25738735cd9449f216c2dd77a223, type: 3}
   _startPlatform: {fileID: 2947400730561190549, guid: 6d043cb20cdb41c489f7b038a4c07136,
