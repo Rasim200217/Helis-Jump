@@ -16,7 +16,7 @@ public class SpawnTower : MonoBehaviour
 
     private float _startAndFinishAdditionScale = 0.5f;
 
-    public float beamScaleY => _levelCount / 2 + _startAndFinishAdditionScale + _additionScale / 2f;
+    public float beamScaleY => _levelCount / 2f + _startAndFinishAdditionScale + _additionScale / 2f;
 
 
     private void Start()
@@ -28,10 +28,10 @@ public class SpawnTower : MonoBehaviour
     {
         GameObject beam = Instantiate(_beam, transform);
         // ReSharper disable once PossibleLossOfFraction
-        beam.transform.localScale = new Vector3(1, beamScaleY, 1);
+        beam.transform.localScale = new Vector3(0.5f, beamScaleY, 0.5f);
 
         Vector3 spawnPosition = _beam.transform.position;
-        spawnPosition.y += _beam.transform.localScale.y - _additionScale;
+        spawnPosition.y += _beam.transform.localScale.y;
         
         SpawnPlatform(_startPlatform, ref spawnPosition, beam.transform);
         
